@@ -19,7 +19,7 @@ time
 ## Config
 You will need to create a .ini file as a config with the following sections:
 
-**[config]**
+**[config]**    
 header=comma-separated list of the variables (column names)  
 datapath=path for the json input file  
 subset=if the json file has a key embedding all of the data, this is to subset the values of that key out  
