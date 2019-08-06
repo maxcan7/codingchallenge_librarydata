@@ -20,16 +20,16 @@ time
 You will need to create a .ini file as a config with the following sections:
 
 **[config]**
-header=comma-separated list of the variables (column names)
-datapath=path for the json input file
-subset=if the json file has a key embedding all of the data, this is to subset the values of that key out
-outputpath=path for the csv output file
-rowkey=if the individual rows have a key embedding the data, this is to subset the values of that key out
-rename_from=names of variables to be renamed from json to csv, comma-separated
-rename_to=the new variable names in the same order as above, comma-separated
-split_from=variables that need to be split e.g. splitting begin and end times, comma-separated
-split_to=the new variables from the split, comma-separated within split variables and semicolon-separated between split variables e.g. monday, tuesday in split_from might look like monday_start, monday_end; tuesday_start, tuesday_end
-splitter=the separator e.g. blank, - , (an actual comma) , ; , etc.
+header=comma-separated list of the variables (column names)  
+datapath=path for the json input file  
+subset=if the json file has a key embedding all of the data, this is to subset the values of that key out  
+outputpath=path for the csv output file  
+rowkey=if the individual rows have a key embedding the data, this is to subset the values of that key out  
+rename_from=names of variables to be renamed from json to csv, comma-separated  
+rename_to=the new variable names in the same order as above, comma-separated  
+split_from=variables that need to be split e.g. splitting begin and end times, comma-separated  
+split_to=the new variables from the split, comma-separated within split variables and semicolon-separated between split variables e.g. monday, tuesday in split_from might look like monday_start, monday_end; tuesday_start, tuesday_end  
+splitter=the separator e.g. blank, - , (an actual comma) , ; , etc.  
 
 **configpath.py**  
 A python script that only contains a string with the path for the .ini file. My .ini file is in the main directory but it should be flexible.
